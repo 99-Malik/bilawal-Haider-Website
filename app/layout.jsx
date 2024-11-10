@@ -1,7 +1,7 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
-
+import CallButtons from "../components/buttons/FixCallButtons"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -65,6 +65,7 @@ export default function RootLayout({ children }) {
       
       {children}
       </body>
+      <CallButtons/>
       
     </html>
   );

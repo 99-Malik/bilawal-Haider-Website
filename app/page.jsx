@@ -8,7 +8,6 @@ import Header from "../components/sections/lg/LgHeader";
 import Footer from "../components/sections/lg/LgFooter";
 
 
-
 const LgServiceCenterPage = () => {
   return (
     <div className="flex flex-col">
