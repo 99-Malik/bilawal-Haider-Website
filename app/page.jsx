@@ -4,7 +4,6 @@ import LgBanner from "@/components/sections/lg/LgBanner";
 import LgQualitySection from "@/components/sections/lg/LgQualitySection";
 import LgServices from "@/components/sections/lg/LgServices";
 import HomeQuality from "../components/sections/lg/HomeQuality"
-import Feature from "../components/sections/lg/feature"
 import Header from "../components/sections/lg/LgHeader";
 import Footer from "../components/sections/lg/LgFooter";
 
@@ -18,7 +17,6 @@ const LgServiceCenterPage = () => {
       <LgQualitySection />
       <AboutSection />
       <HomeQuality/>
-      <Feature/>
       <LgServices />
       <OurMissionSection />
       <Footer />
