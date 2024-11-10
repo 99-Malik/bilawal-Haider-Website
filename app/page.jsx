@@ -1,30 +1,29 @@
-import Image from "next/image";
-import Header from "@/components/headers/Header";
-import CallHeader from "@/components/headers/CallHeader";
-import MainBanner from "@/components/sections/home/MainBanner";
-import QualitySection from "@/components/sections/home/QualitySection";
 import AboutSection from "@/components/sections/home/AboutSection";
-import ServicesSection from "@/components/sections/home/ServicesSection";
 import OurMissionSection from "@/components/sections/home/OurMissionSection";
-import Footer from "@/components/sections/home/Footer";
-import FixedCallButtons from "@/components/buttons/FixCallButtons";
-import HomeQuality from "../components/sections/home/HomeQuality"
-import Feature from "../components/sections/home/feature"
+import LgBanner from "@/components/sections/lg/LgBanner";
+import LgQualitySection from "@/components/sections/lg/LgQualitySection";
+import LgServices from "@/components/sections/lg/LgServices";
+import HomeQuality from "../components/sections/lg/HomeQuality"
+import Feature from "../components/sections/lg/feature"
+import Header from "../components/sections/lg/LgHeader";
+import Footer from "../components/sections/lg/LgFooter";
 
-export default function Home() {
+
+
+const LgServiceCenterPage = () => {
   return (
-    <body className="flex flex-col">
-    
+    <div className="flex flex-col">
       <Header />
-      <MainBanner />
-      <QualitySection />
+      <LgBanner />
+      <LgQualitySection />
       <AboutSection />
       <HomeQuality/>
       <Feature/>
-      <ServicesSection />
+      <LgServices />
       <OurMissionSection />
       <Footer />
-      <FixedCallButtons />
-    </body>
+    </div>
   );
-}
+};
+
+export default LgServiceCenterPage;
