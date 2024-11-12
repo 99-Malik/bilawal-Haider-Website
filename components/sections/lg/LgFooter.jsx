@@ -45,7 +45,7 @@ const logo = (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
-    <g clip-path="url(#clip0_415_130964)">
+    <g clipPath="url(#clip0_415_130964)">
       <path
         d="M134.874 68.7831H165.274V81.2487H120.202V17.2373H134.874V68.7831Z"
         fill="#707070"

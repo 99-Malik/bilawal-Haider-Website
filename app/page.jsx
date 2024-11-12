@@ -1,3 +1,4 @@
+"use client"
 import AboutSection from "@/components/sections/home/AboutSection";
 import OurMissionSection from "@/components/sections/home/OurMissionSection";
 import LgBanner from "@/components/sections/lg/LgBanner";
@@ -10,6 +11,7 @@ import Footer from "../components/sections/lg/LgFooter";
 
 const LgServiceCenterPage = () => {
   return (
+    <>
     <div className="flex flex-col">
       <Header />
       <LgBanner />
@@ -20,6 +22,7 @@ const LgServiceCenterPage = () => {
       <OurMissionSection />
       <Footer />
     </div>
+    </>
   );
 };
 

@@ -27,7 +27,7 @@ const LgServices = () => {
         </span>
         <div className="grid gap-10 sm:px-5 md:grid-cols-3 lg:grid-cols-4 2xl:px-0">
           <ServiceCard
-            imageUrl={"/samsung/washingMachine.avif"}
+            imageUrl={"/lg/washing-repair.webp"}
             heading={"Washing Machine Repair"}
             description={
               "Delivering top-tier, professional solutions that guarantee the optimal performance of your washing machine."
@@ -35,7 +35,7 @@ const LgServices = () => {
             id={"washing-machine"}
           />
           <ServiceCard
-            imageUrl={"/samsung/ref.webp"}
+            imageUrl={"/lg/fridge-repair.jpg"}
             heading={"Refrigerator Repair"}
             description={
               "Whether it's a noisy compressor, a torn gasket, or a sealed door issue causing your refrigerator not to freeze properly."
@@ -43,7 +43,7 @@ const LgServices = () => {
             id={"refrigerator"}
           />
           <ServiceCard
-            imageUrl={"/samsung/tv.webp"}
+            imageUrl={"/lg/tv-repair.jpeg"}
             heading={"Television Repair"}
             description={
               "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
@@ -51,7 +51,7 @@ const LgServices = () => {
             id={"television"}
           />
           <ServiceCard
-            imageUrl={"/samsung/stove.webp"}
+            imageUrl={"/lg/stove-repair.jpg"}
             heading={"Stove/Cooker Repair"}
             description={
               "We offer fast and efficient repairs for all types of stoves and cookers. We only use high quality replacement part."
@@ -59,7 +59,7 @@ const LgServices = () => {
             id={"stove-cooker"}
           />
           <ServiceCard
-            imageUrl={"/samsung/dishwasher.avif"}
+            imageUrl={"/lg/dishwasher-repair.jpg"}
             heading={"Dishwasher Repair"}
             description={
               "We resolve common issues such as leaks, poor cleaning and unusual noises to ensure a spotless and efficient cleaning."
@@ -67,7 +67,7 @@ const LgServices = () => {
             id={"dishwasher"}
           />
           <ServiceCard
-            imageUrl={"/samsung/oven.webp"}
+            imageUrl={"/lg/oven-repair.jpeg"}
             heading={"Gas Oven Repair"}
             description={
               "Issues like temperature inconsistencies, ignition problems, gas leaks are resolved by our professionals."
@@ -75,7 +75,7 @@ const LgServices = () => {
             id={"gas-oven"}
           />
           <ServiceCard
-            imageUrl={"/samsung/washingMachine.avif"}
+            imageUrl={"/lg/dryer-repair.jpg"}
             heading={"Dryer Repair"}
             description={
               "Delivering top-tier, professional solutions that guarantee the optimal performance of your Dryer."
