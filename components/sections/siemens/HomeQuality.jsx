@@ -40,7 +40,7 @@ const LgExperience = () => {
             About Us
           </h1>
           <h1 className="mt-4 text-center text-xl font-bold tracking-wide text-black md:mt-2 md:text-left">
-            20 Years Of Experience In This Passion
+            20 Years Experience In This Passion
           </h1>
           <p className="mt-6 text-justify text-gray-500">
             We are established in Dubai and Abu Dhabi, provides
