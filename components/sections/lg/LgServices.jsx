@@ -42,14 +42,7 @@ const LgServices = () => {
             }
             id={"refrigerator"}
           />
-          <ServiceCard
-            imageUrl={"/lg/tv-repair.jpeg"}
-            heading={"Television Repair"}
-            description={
-              "Our professional TV repair service provides expert diagnostics and precise repairs ensuring optimal functionality."
-            }
-            id={"television"}
-          />
+          
           <ServiceCard
             imageUrl={"/lg/stove-repair.jpg"}
             heading={"Stove/Cooker Repair"}

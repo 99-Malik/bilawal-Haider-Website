@@ -7,7 +7,7 @@ import SiemensAboutSection from "@/components/sections/siemens/SiemensAboutSecti
 import SiemensBanner from "@/components/sections/siemens/SiemensBanner";
 import SiemensMissionSection from "@/components/sections/siemens/SiemensMissionSection";
 import SiemensQualitySection from "@/components/sections/siemens/SiemensQualitySection";
-import SiemensServices from "@/components/sections/siemens/SiemensServices";
+import LgServices from "@/components/sections/lg/LgServices";
 import HomeQuality from "../../../components/sections/siemens/HomeQuality"
 import Feature from "../../../components/sections/siemens/feature"
 
@@ -19,7 +19,7 @@ const SiemensServiceCenterPage = () => {
       <AboutSection />
       <HomeQuality/>
       <Feature/>
-      <ServicesSection />
+      <LgServices />
       <OurMissionSection />
     </div>
   );
