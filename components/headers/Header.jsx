@@ -10,14 +10,14 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   return (
-    <div className="flex h-24 w-full items-center justify-center">
-      <div className="flex w-full max-w-7xl items-center justify-between px-5">
+    <div className="flex h-20 w-full items-center justify-center">
+      <div className="flex w-full max-w-7xl  md:mt-4 items-center justify-between px-5">
         <div className="flex items-center gap-x-1">
           <Image src="/logo.svg" width={50} height={50} alt="LOGO" />
           <div className="flex flex-col justify-between px-2">
-            <span className="text-3xl font-bold uppercase">Service</span>
+            <span className="text-xl md:text-3xl font-bold uppercase">Appliance Repair</span>
             <span className="text-xs uppercase text-black/80">
-            Center UAE
+            Master
             </span>
           </div>
         </div>

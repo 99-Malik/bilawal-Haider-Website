@@ -1,12 +1,12 @@
 "use client"
 import AboutSection from "@/components/sections/home/AboutSection";
 import OurMissionSection from "@/components/sections/home/OurMissionSection";
-import LgBanner from "@/components/sections/lg/LgBanner";
+import LgBanner from "@/components/sections/home/MainBanner";
 import LgQualitySection from "@/components/sections/lg/LgQualitySection";
 import LgServices from "@/components/sections/lg/LgServices";
-import HomeQuality from "../components/sections/lg/HomeQuality"
-import Header from "../components/sections/lg/LgHeader";
-import Footer from "../components/sections/lg/LgFooter";
+import HomeQuality from "../components/sections/home/HomeQuality"
+import Header from "../components/headers/Header";
+import Footer from "../components/sections/home/Footer";
 
 
 const LgServiceCenterPage = () => {
@@ -16,7 +16,7 @@ const LgServiceCenterPage = () => {
       <Header />
       <LgBanner />
       <LgQualitySection />
-      <AboutSection />
+      <AboutSection/>
       <HomeQuality/>
       <LgServices />
       <OurMissionSection />
