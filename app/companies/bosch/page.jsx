@@ -11,8 +11,8 @@ import MainBanner from "@/components/sections/home/MainBanner";
 const BoschServiceCenterPage = () => {
   return (
     <div className="flex flex-col">
-      {/* <BoschBanner /> */}
-            <MainBanner />
+      <BoschBanner />
+            {/* <MainBanner /> */}
 
       <QualitySection />
       <AboutSection />

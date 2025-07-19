@@ -12,8 +12,8 @@ import MainBanner from "@/components/sections/home/MainBanner";
 const LgServiceCenterPage = () => {
   return (
     <div className="flex flex-col">
-      {/* <LgBanner /> */}
-      <MainBanner/>
+      <LgBanner />
+      {/* <MainBanner/> */}
       <LgQualitySection />
       <AboutSection />
       <HomeQuality/>
