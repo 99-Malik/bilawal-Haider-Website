@@ -22,7 +22,7 @@ const BoschServiceCenterPage = () => {
         <div className="relative z-20 flex h-full items-center justify-center">
           <div className="text-center text-white max-w-4xl mx-auto px-6">
             <div className="mb-8">
-              <div className="inline-flex items-center gap-4 bg-white/20 backdrop-blur-sm rounded-2xl px-6 py-3 md:mt-20 mb-6 mt-12">
+              <div className="inline-flex items-center gap-4 bg-white/20 backdrop-blur-sm rounded-2xl px-6 py-3 md:mt-20 mb-6 mt-16">
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center">
                   <span className="text-2xl font-bold text-[#FF0000]">B</span>
                 </div>
