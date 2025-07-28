@@ -1,20 +1,21 @@
 const LgSubServices = ({ title }) => {
-  return (
-    <div className="flex">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="h-6 w-6"
-      >
-        <path
-          fillRule="evenodd"
-          d="M19.916 4.626a.75.75 0 0 1 .208 1.04l-9 13.5a.75.75 0 0 1-1.154.114l-6-6a.75.75 0 0 1 1.06-1.06l5.353 5.353 8.493-12.74a.75.75 0 0 1 1.04-.207Z"
-          fillRule="evenodd"
-        />
-      </svg>
+  // Define brand color mapping
+  const brandColors = {
+    lg: "text-[#a50034]",
+    samsung: "text-[#1428a0]",
+    bosch: "text-[#ed1c24]",
+    siemens: "text-[#009999]",
+  };
 
-      <p className="px-4 text-maroon">{title}</p>
+  // Extract brand from title (assumes first word is brand)
+  const brandKey = title.split(" ")[0].toLowerCase();
+
+  // Pick color or fallback to neutral
+  const color = brandColors[brandKey] || "text-gray-700";
+
+  return (
+    <div className={`text-lg font-medium ${color}`}>
+      {title}
     </div>
   );
 };
