@@ -126,9 +126,8 @@ const BoschFooter = () => {
             </div>
           </div>
 
-          {/* Service Centers */}
           <div className="space-y-6">
-            <h3 className="text-xl font-bold">Service Centers</h3>
+            {/* <h3 className="text-xl font-bold">Service Centers</h3>
             <div className="space-y-3">
               {serviceCenters.map((center) => (
                 <Link
@@ -140,7 +139,7 @@ const BoschFooter = () => {
                 </Link>
               ))}
             </div>
-            
+             */}
             {/* Newsletter Signup */}
             <div className="pt-6">
               <h4 className="text-lg font-semibold mb-3">Stay Updated</h4>

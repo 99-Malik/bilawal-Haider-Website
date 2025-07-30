@@ -239,7 +239,7 @@ Center AE
                 ))}
 
                 {/* Dropdown */}
-                <div className="space-y-2">
+                {/* <div className="space-y-2">
                   <button
                     onClick={() => setIsServicesOpen(!isServicesOpen)}
                     className="flex items-center justify-between w-full py-3 px-4 text-white font-medium rounded-xl hover:bg-white/10 transition-all duration-300"
@@ -284,7 +284,7 @@ Center AE
                       </motion.div>
                     )}
                   </AnimatePresence>
-                </div>
+                </div> */}
               </nav>
 
               {/* Contact */}

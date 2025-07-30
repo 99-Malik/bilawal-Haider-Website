@@ -6,9 +6,9 @@ import CallButtons from "../components/buttons/FixCallButtons"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Appliances Repair Master",
+  title: "Service Center AE",
   description:
-    "Appliances Repair Master is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
+    "Service Center AE is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
 };
 
 
@@ -17,14 +17,14 @@ export default function RootLayout({ children }) {
     <html lang="en" className={inter.className}>
     <head>
         {/* Include gtag.js script */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-16749745335" />
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17373238717" />
 
         {/* Include gtag.js initialization script */}
         <Script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'AW-16749745335');
+          gtag('config', 'AW-17373238717');
         ` }} />
         <Script type="text/javascript" async dangerouslySetInnerHTML={{ __html: `
             var script = document.createElement('script');
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
             elem.appendChild(script);
           ` }} />
            {/* Include gtag_report_conversion script */}
-        <Script dangerouslySetInnerHTML={{ __html: `
+        {/* <Script dangerouslySetInnerHTML={{ __html: `
           function gtag_report_conversion(url) {
             var callback = function () {
               if (typeof(url) != 'undefined') {
@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
             return false;
           }
         ` }} />
-
+ */}
 
 </head>
       <body className={inter.className}>
