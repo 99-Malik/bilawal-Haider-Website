@@ -210,7 +210,7 @@ const LgServiceCenterPage = () => {
               Our Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive appliance repair solutions for all your home needs
+              Comprehensive appliances repair solutions for all your home needs
             </p>
           </div>
           <LgServices />
