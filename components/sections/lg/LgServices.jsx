@@ -6,10 +6,10 @@ import { usePathname } from "next/navigation";
 import { phoneNumber } from "@/libs/phoneNumber";
 
 const brandColors = {
-  lg: "#a50034",
-  bosch: "#ed0007",
-  siemens: "#00A4B4",
-  samsung: "#1428A0",
+  // lg: "#a50034",
+  // bosch: "#ed0007",
+  // siemens: "#00A4B4",
+  // samsung: "#1428A0",
 };
 
 const defaultGradient = "bg-gradient-to-r from-blue-500 to-purple-500";

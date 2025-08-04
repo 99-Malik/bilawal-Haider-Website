@@ -11,9 +11,9 @@ export const metadata = {
 const SiemensLayout = ({ children }) => {
   return (
     <body className="flex flex-col text-black">
-      <SiemensHeader />
+      {/* <SiemensHeader /> */}
       {children}
-      <SiemensFooter />
+      {/* <SiemensFooter /> */}
       <FixedCallButtons />
     </body>
   );

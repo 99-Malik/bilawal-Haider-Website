@@ -5,9 +5,9 @@ import SamsungHeader from '@/components/sections/samsung/SamsungHeader'
 const SamsungLayout = ({children}) => {
   return (
     <body>
-        <SamsungHeader />
+        {/* <SamsungHeader /> */}
         {children}
-        <SamsungFooter /> 
+        {/* <SamsungFooter />  */}
         <FixedCallButtons />
     </body>
   )
