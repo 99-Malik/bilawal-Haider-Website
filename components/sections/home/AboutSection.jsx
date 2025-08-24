@@ -5,22 +5,22 @@ import { phoneNumber } from "@/libs/phoneNumber";
 
 // Brand-specific color styles
 const brandStyles = {
-  // lg: {
-  //   primary: "text-[#a50034]",
-  //   secondary: "bg-[#a50034]",
-  // },
-  // bosch: {
-  //   primary: "text-[#ed0007]",
-  //   secondary: "bg-[#ed0007]",
-  // },
-  // siemens: {
-  //   primary: "text-[#00a4b4]",
-  //   secondary: "bg-[#00a4b4]",
-  // },
-  // samsung: {
-  //   primary: "text-[#1428a0]",
-  //   secondary: "bg-[#1428a0]",
-  // },
+  lg: {
+    primary: "text-[#a50034]",
+    secondary: "bg-[#a50034]",
+  },
+  bosch: {
+    primary: "text-[#ed0007]",
+    secondary: "bg-[#ed0007]",
+  },
+  siemens: {
+    primary: "text-[#00a4b4]",
+    secondary: "bg-[#00a4b4]",
+  },
+  samsung: {
+    primary: "text-[#1428a0]",
+    secondary: "bg-[#1428a0]",
+  },
   default: {
     primary: "text-[#1d4ed8]",
     secondary: "bg-[#1d4ed8]",

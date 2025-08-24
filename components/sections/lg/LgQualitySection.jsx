@@ -6,26 +6,26 @@ import { usePathname } from "next/navigation";
 
 // Brand-based color mapping
 const brandStyles = {
-  // lg: {
-  //   gradient: "from-[#a50034] to-[#a50034]",
-  //   text: "text-[#a50034]",
-  //   number: "text-[#a50034]",
-  // },
-  // samsung: {
-  //   gradient: "from-[#1428a0] to-[#1428a0]",
-  //   text: "text-[#1428a0]",
-  //   number: "text-[#1428a0]",
-  // },
-  // bosch: {
-  //   gradient: "from-[#e60000] to-[#e60000]",
-  //   text: "text-[#e60000]",
-  //   number: "text-[#e60000]",
-  // },
-  // siemens: {
-  //   gradient: "from-[#009999] to-[#009999]",
-  //   text: "text-[#009999]",
-  //   number: "text-[#009999]",
-  // },
+  lg: {
+    gradient: "from-[#a50034] to-[#a50034]",
+    text: "text-[#a50034]",
+    number: "text-[#a50034]",
+  },
+  samsung: {
+    gradient: "from-[#1428a0] to-[#1428a0]",
+    text: "text-[#1428a0]",
+    number: "text-[#1428a0]",
+  },
+  bosch: {
+    gradient: "from-[#e60000] to-[#e60000]",
+    text: "text-[#e60000]",
+    number: "text-[#e60000]",
+  },
+  siemens: {
+    gradient: "from-[#009999] to-[#009999]",
+    text: "text-[#009999]",
+    number: "text-[#009999]",
+  },
   default: {
     gradient: "from-blue-600 to-purple-600",
     text: "text-blue-600",

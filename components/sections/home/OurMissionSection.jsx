@@ -5,22 +5,22 @@ import { phoneNumber } from "@/libs/phoneNumber";
 
 // Brand-based gradient + default fallback
 const brandColors = {
-  // lg: {
-  //   gradient: "from-[#a50034] to-[#800026]",
-  //   text: "text-[#a50034]",
-  // },
-  // samsung: {
-  //   gradient: "from-[#1428a0] to-[#0078d6]",
-  //   text: "text-[#1428a0]",
-  // },
-  // bosch: {
-  //   gradient: "from-[#ed1c24] to-[#a60000]",
-  //   text: "text-[#ed1c24]",
-  // },
-  // siemens: {
-  //   gradient: "from-[#009999] to-[#007777]",
-  //   text: "text-[#009999]",
-  // },
+  lg: {
+    gradient: "from-[#a50034] to-[#800026]",
+    text: "text-[#a50034]",
+  },
+  samsung: {
+    gradient: "from-[#1428a0] to-[#0078d6]",
+    text: "text-[#1428a0]",
+  },
+  bosch: {
+    gradient: "from-[#ed1c24] to-[#a60000]",
+    text: "text-[#ed1c24]",
+  },
+  siemens: {
+    gradient: "from-[#009999] to-[#007777]",
+    text: "text-[#009999]",
+  },
   default: {
     gradient: "from-blue-600 to-cyan-500",
     text: "text-blue-600",

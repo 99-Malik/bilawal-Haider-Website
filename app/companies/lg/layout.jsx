@@ -12,10 +12,10 @@ export const metadata = {
 const Bosch = ({ children }) => {
   return (
     <body className="flex flex-col bg-lg-bg select-none">
-      {/* <LgHeader /> */}
+      <LgHeader />
       {/* <Header/> */}
       {children}
-      {/* <LgFooter /> */}
+      <LgFooter />
       {/* <Footer/> */}
       <FixedCallButtons />
     </body>
