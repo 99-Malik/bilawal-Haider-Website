@@ -13,11 +13,11 @@ export const metadata = {
 const Bosch = ({ children }) => {
   return (
     <body className="flex flex-col">
-            {/* <Header /> */}
+            <Header />
 
-      <BoschHeader />
+      {/* <BoschHeader /> */}
       {children}
-      <BoschFooter />
+      {/* <BoschFooter /> */}
       {/* <Footer/> */}
       <FixedCallButtons />
     </body>
