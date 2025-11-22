@@ -6,27 +6,29 @@ import CallButtons from "../components/buttons/FixCallButtons"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Service Center AE",
+  title: "Appliance Repair",
   description:
-    "Service Center AE is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
+    "Appliance Repair is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
 };
 
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={inter.className}>
-    <head>
+      <head>
         {/* Include gtag.js script */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17373238717" />
 
         {/* Include gtag.js initialization script */}
-        <Script dangerouslySetInnerHTML={{ __html: `
+        <Script dangerouslySetInnerHTML={{
+          __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
           gtag('config', 'AW-17373238717');
         ` }} />
-        <Script type="text/javascript" async dangerouslySetInnerHTML={{ __html: `
+        <Script type="text/javascript" async dangerouslySetInnerHTML={{
+          __html: `
             var script = document.createElement('script');
             script.async = true;
             script.type = 'text/javascript';
@@ -35,7 +37,7 @@ export default function RootLayout({ children }) {
             var elem = document.head;
             elem.appendChild(script);
           ` }} />
-           {/* Include gtag_report_conversion script */}
+        {/* Include gtag_report_conversion script */}
         {/* <Script dangerouslySetInnerHTML={{ __html: `
           function gtag_report_conversion(url) {
             var callback = function () {
@@ -52,8 +54,8 @@ export default function RootLayout({ children }) {
         ` }} />
  */}
 
-</head>
-      <body className={inter.className}>
+      </head>
+      <body className={`${inter.className} bg-background text-text-main antialiased selection:bg-primary selection:text-white overflow-x-hidden`}>
         <noscript>
           <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGCK73CF" height="0" width="0" style={{ display: "none", visibility: "hidden" }} />
           {/* <!--  ClickCease.com tracking--> */}
@@ -62,11 +64,11 @@ export default function RootLayout({ children }) {
           </a>
           {/* <!--  ClickCease.com tracking--> */}
         </noscript>
-      
-      {children}
+
+        {children}
       </body>
-      <CallButtons/>
-      
+      <CallButtons />
+
     </html>
   );
 }
