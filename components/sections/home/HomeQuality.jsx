@@ -54,7 +54,7 @@ const HomeQuality = () => {
           <h2 className="text-4xl md:text-5xl font-bold leading-tight text-slate-900">
             Professional
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">
-              Appliance Repair
+              Quick Fix Service
             </span>
             Services
           </h2>

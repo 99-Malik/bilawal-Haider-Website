@@ -6,9 +6,9 @@ import CallButtons from "../components/buttons/FixCallButtons"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Appliance Repair",
+  title: "Quick Fix Service",
   description:
-    "Appliance Repair is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
+    "Quick Fix Service is a local appliance repair company in the Dubai and Abu Dhabi. We specialize in repairing all major appliances including refrigerators, washers, dryers, stoves, and more.",
 };
 
 

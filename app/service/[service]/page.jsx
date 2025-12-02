@@ -60,12 +60,12 @@ const ServicePage = ({ params }) => {
               {service} Repair
             </span>
             <span className="text-">
-              Our {service} service at Appliance Repair guarantees
+              Our {service} service at Quick Fix Service guarantees
               meticulous attention to detail, ensuring your appliance operates
               at peak performance. With skilled technicians and state-of-the-art
               equipment, we diagnose and resolve washing machine issues swiftly,
               restoring convenience to your daily routine. From routine
-              maintenance to complex repairs, trust Appliance Repair to
+              maintenance to complex repairs, trust Quick Fix Service to
               provide dependable washing machine services that extend the
               lifespan of your appliance.
             </span>

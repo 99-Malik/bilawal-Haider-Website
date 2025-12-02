@@ -34,10 +34,10 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-lg font-bold text-white tracking-tight leading-none">
-                  Appliance<span className="text-primary">Repair</span>
+                  Quick<span className="text-primary">Fix</span>
                 </span>
                 <span className="text-[10px] font-medium text-white/60 tracking-widest uppercase">
-                  Expert Repairs
+                  Service
                 </span>
               </div>
             </Link>
@@ -111,7 +111,7 @@ const Footer = () => {
 
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-text-muted text-sm">
-            © {currentYear} Appliance Repair. All rights reserved.
+            © {currentYear} Quick Fix Service. All rights reserved.
           </p>
           <div className="flex items-center gap-6 text-sm text-text-muted">
             <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>

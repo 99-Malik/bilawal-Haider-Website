@@ -56,10 +56,10 @@ const Header = () => {
               </div>
               <div className="flex flex-col">
                 <span className={`text-lg font-bold tracking-tight leading-none ${isScrolled ? "text-slate-900" : "text-slate-900"}`}>
-                  Appliance<span className="text-primary">Repair</span>
+                  Quick<span className="text-primary">Fix</span>
                 </span>
                 <span className={`text-[10px] font-medium tracking-widest uppercase ${isScrolled ? "text-slate-500" : "text-slate-600"}`}>
-                  Expert Repairs
+                  Service
                 </span>
               </div>
             </Link>

@@ -40,7 +40,7 @@ const LgServiceCenterPage = () => {
               <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tight text-slate-900">
                 Premium <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">
-                  Appliance Repair
+                  Quick Fix Service
                 </span>
                 <br /> Services
               </h1>
