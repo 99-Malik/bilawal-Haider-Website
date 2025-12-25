@@ -105,7 +105,52 @@ const Footer = () => {
                   <span>WhatsApp Support</span>
                 </a>
               </li>
+              <li>
+                <div className="flex items-start gap-3 text-text-muted">
+                  <div className="w-8 h-8 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0">
+                    <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <span className="leading-relaxed">17A Street shop no 4 Al Qouz Ind Third, Dubai, UAE</span>
+                </div>
+              </li>
             </ul>
+          </div>
+        </div>
+
+        {/* Map Section */}
+        <div className="mb-16">
+          <h3 className="text-white font-bold mb-6">Our Location</h3>
+          <div className="rounded-xl overflow-hidden border border-white/10 shadow-2xl relative">
+            <iframe
+              src="https://www.google.com/maps?q=25.13895,55.24096&hl=en&z=17&output=embed"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="w-full"
+              title="Our Location - 17A Street shop no 4 Al Qouz Ind Third"
+            ></iframe>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-4">
+            <p className="text-text-muted text-sm text-center sm:text-left">
+              17A Street shop no 4 Al Qouz Ind Third, Dubai, UAE
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=25.13895,55.24096"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-red-600 text-sm font-medium transition-colors flex items-center gap-2"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Open in Google Maps
+            </a>
           </div>
         </div>
 
