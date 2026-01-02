@@ -17,7 +17,7 @@ const LgServiceCenterPage = () => {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center pt-40 pb-12 md:pt-52 overflow-hidden">
+      <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center pt-24 pb-12 md:pt-28 lg:pt-32 overflow-hidden">
         {/* Premium Background Pattern */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-50 via-white to-slate-100"></div>
 
@@ -32,10 +32,7 @@ const LgServiceCenterPage = () => {
         <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6 md:space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/80 border border-slate-200 backdrop-blur-sm shadow-sm">
-                <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
-                <span className="text-xs md:text-sm font-medium text-slate-600">Available 24/7 in Dubai & Abu Dhabi</span>
-              </div>
+             
 
               <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tight text-slate-900">
                 Premium <br />
