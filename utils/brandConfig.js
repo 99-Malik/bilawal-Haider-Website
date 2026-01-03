@@ -6,7 +6,7 @@ export const brandConfig = {
     borderColor: "border-[#A50034]",
     textColor: "text-[#A50034]",
     bgColor: "bg-[#A50034]",
-    description: "Authorized LG Service Center: Fast, reliable repairs for a hassle-free home.",
+    description: "LG Service Center: Fast, reliable repairs for a hassle-free home.",
     content: "Our skilled technicians are committed to restoring your LG appliances to peak performance, ensuring your comfort and convenience. From fixing minor glitches to tackling major breakdowns, we've got you covered. Experience top-notch service that keeps your household running smoothly!",
   },
   bosch: {
@@ -16,7 +16,7 @@ export const brandConfig = {
     borderColor: "border-[#EA0016]",
     textColor: "text-[#EA0016]",
     bgColor: "bg-[#EA0016]",
-    description: "Authorized Bosch Service Center: Fast, reliable repairs for a hassle-free home.",
+    description: "Bosch Service Center: Fast, reliable repairs for a hassle-free home.",
     content: "Our skilled technicians are committed to restoring your Bosch appliances to peak performance, ensuring your comfort and convenience. From fixing minor glitches to tackling major breakdowns, we've got you covered. Experience top-notch service that keeps your household running smoothly!",
   },
   siemens: {
@@ -26,7 +26,7 @@ export const brandConfig = {
     borderColor: "border-[#009999]",
     textColor: "text-[#009999]",
     bgColor: "bg-[#009999]",
-    description: "Authorized Siemens Service Center: Fast, reliable repairs for a hassle-free home.",
+    description: "Siemens Service Center: Fast, reliable repairs for a hassle-free home.",
     content: "Our skilled technicians are committed to restoring your Siemens appliances to peak performance, ensuring your comfort and convenience. From fixing minor glitches to tackling major breakdowns, we've got you covered. Experience top-notch service that keeps your household running smoothly!",
   },
 };

@@ -87,7 +87,6 @@ const BrandPage = () => {
         
 
               <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tight text-slate-900">
-                Authorized <br />
                 <span className="text-transparent bg-clip-text" style={{ color: brandInfo.color }}>
                   {brandInfo.name} Service Center
                 </span>
@@ -167,7 +166,7 @@ const BrandPage = () => {
       {/* About Section */}
       <section id="about" className="py-12 md:py-24 bg-slate-50 border-y border-slate-200">
         <div className="max-w-7xl mx-auto px-6">
-          <AboutSection brandColor={brandInfo.color} />
+          <AboutSection brandColor={brandInfo.color} brandName={brandInfo.name} />
         </div>
       </section>
 
@@ -184,7 +183,7 @@ const BrandPage = () => {
       {/* Experience Banner */}
       <section className="py-12 md:py-24 border-y border-opacity-20" style={{ background: `linear-gradient(to right, ${brandInfo.color}0D, ${lightenColor(brandInfo.color, 0.4)}0D)`, borderColor: brandInfo.color }}>
         <div className="max-w-7xl mx-auto px-6">
-          <HomeQuality brandColor={brandInfo.color} />
+          <HomeQuality brandColor={brandInfo.color} brandName={brandInfo.name} />
         </div>
       </section>
 
@@ -204,7 +203,7 @@ const BrandPage = () => {
               Our {brandInfo.name} Expert Services
             </h2>
             <p className="text-slate-600 max-w-2xl mx-auto">
-              Comprehensive repair solutions for all major {brandInfo.name} home appliances. We use original parts and provide warranty on all repairs.
+              Comprehensive repair solutions for {brandInfo.name} home appliances. We use original parts and provide warranty on all repairs.
             </p>
           </div>
           

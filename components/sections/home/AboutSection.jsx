@@ -6,7 +6,7 @@ import { Wrench, Zap, DollarSign, ShieldCheck } from "lucide-react";
 import { phoneNumber } from "@/libs/phoneNumber";
 import { lightenColor } from "@/utils/brandConfig";
 
-const AboutSection = ({ brandColor = "#DC2626" }) => {
+const AboutSection = ({ brandColor = "#DC2626", brandName = null }) => {
   const highlights = [
     {
       icon: Wrench,
@@ -53,10 +53,10 @@ const AboutSection = ({ brandColor = "#DC2626" }) => {
           </p>
 
           <p className="text-text-muted leading-relaxed">
-            Our team of certified technicians specializes in repairing all major brands
-            and models of home appliances. With over 15 years of experience, we've
-            successfully completed thousands of repairs, earning the trust and loyalty
-            of our customers.
+            {brandName 
+              ? `Our team of certified technicians specializes in repairing ${brandName} appliances and models. With over 15 years of experience, we've successfully completed thousands of ${brandName} repairs, earning the trust and loyalty of our customers.`
+              : "Our team of certified technicians specializes in repairing all major brands and models of home appliances. With over 15 years of experience, we've successfully completed thousands of repairs, earning the trust and loyalty of our customers."
+            }
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">

@@ -5,7 +5,7 @@ import { Droplets, Snowflake, Flame, UtensilsCrossed, Wind } from "lucide-react"
 import { phoneNumber } from "@/libs/phoneNumber";
 import { lightenColor } from "@/utils/brandConfig";
 
-const HomeQuality = ({ brandColor = "#DC2626" }) => {
+const HomeQuality = ({ brandColor = "#DC2626", brandName = null }) => {
   const services = [
     {
       title: "Washing Machine Repair",
@@ -64,15 +64,17 @@ const HomeQuality = ({ brandColor = "#DC2626" }) => {
           </h2>
 
           <p className="text-xl text-slate-600 leading-relaxed">
-            With over 20 years of experience, we provide comprehensive appliance repair
-            services across Dubai and Abu Dhabi. Our certified technicians are experts
-            in diagnosing and repairing all major appliance brands.
+            {brandName
+              ? `With over 20 years of experience, we provide comprehensive ${brandName} appliance repair services across Dubai and Abu Dhabi. Our certified technicians are experts in diagnosing and repairing ${brandName} appliances.`
+              : "With over 20 years of experience, we provide comprehensive appliance repair services across Dubai and Abu Dhabi. Our certified technicians are experts in diagnosing and repairing all major appliance brands."
+            }
           </p>
 
           <p className="text-slate-600 leading-relaxed">
-            We specialize in washing machines, refrigerators, stoves, dishwashers,
-            gas ovens, and dryers. Our commitment to quality, reliability, and
-            customer satisfaction has made us the trusted choice for appliance repairs.
+            {brandName
+              ? `We specialize in ${brandName} washing machines, refrigerators, stoves, dishwashers, gas ovens, and dryers. Our commitment to quality, reliability, and customer satisfaction has made us the trusted choice for ${brandName} appliance repairs.`
+              : "We specialize in washing machines, refrigerators, stoves, dishwashers, gas ovens, and dryers. Our commitment to quality, reliability, and customer satisfaction has made us the trusted choice for appliance repairs."
+            }
           </p>
 
           {/* Stats Grid */}
