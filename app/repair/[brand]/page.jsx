@@ -3,7 +3,7 @@
 import { useParams, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Phone, MessageCircle, Settings, CheckCircle2 } from "lucide-react";
+import { Phone, MessageCircle, Settings, ArrowRight } from "lucide-react";
 import { phoneNumber } from "@/libs/phoneNumber";
 import { getBrandConfig, isValidBrand, lightenColor } from "@/utils/brandConfig";
 import AboutSection from "@/components/sections/home/AboutSection";
@@ -65,101 +65,100 @@ const BrandPage = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background text-text-main selection:bg-primary selection:text-black">
+    <div className="min-h-screen bg-background text-text-main">
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] md:min-h-[95vh] flex items-center pt-24 pb-12 md:pt-28 lg:pt-32 overflow-hidden border-b-4" style={{ borderBottomColor: brandInfo.color }}>
-        {/* Premium Background Pattern */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-slate-50 via-white to-slate-100"></div>
+      <section className="relative w-full flex flex-col overflow-hidden pt-16 lg:pt-20" style={{ backgroundColor: "hsl(222,47%,8%)" }}>
 
-        {/* Subtle Grid */}
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-soft-light"></div>
-        <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(#cbd5e1 1px, transparent 1px)', backgroundSize: '40px 40px', opacity: 0.3 }}></div>
+        {/* Background image + left-to-right gradient overlay */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/technician.png"
+            alt="Professional Technician"
+            fill
+            className="object-cover object-top opacity-20"
+            priority
+          />
+          <div className="absolute inset-0" style={{ background: `linear-gradient(to right, hsl(222,47%,8%) 0%, hsl(222,47%,8%) 40%, transparent 100%)` }} />
+        </div>
 
-        {/* Brand Color Accents */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] rounded-full blur-[120px] -translate-y-1/4 translate-x-1/4 pointer-events-none" style={{ backgroundColor: brandInfo.color, opacity: 0.05 }}></div>
-        <div className="absolute bottom-0 left-0 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-[120px] translate-y-1/4 -translate-x-1/4 pointer-events-none"></div>
+        {/* Decorative large text */}
+        <span className="absolute right-0 bottom-0 text-[28vw] font-black leading-none select-none pointer-events-none z-[1] translate-y-[15%]" style={{ color: "rgba(255,255,255,0.03)" }}>
+          FIX
+        </span>
 
-        <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 md:space-y-8">
-            
+        {/* Content */}
+        <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-10 w-full py-10">
+          <div className="grid lg:grid-cols-[1fr_420px] gap-12 lg:gap-8 items-center w-full">
 
-        
-
-              <h1 className="text-4xl md:text-7xl font-bold leading-tight tracking-tight text-slate-900">
-                <span className="text-transparent bg-clip-text" style={{ color: brandInfo.color }}>
-                  {brandInfo.name} Service Center
+            <div>
+              {/* Pill label */}
+              <div className="flex items-center gap-2 mb-6 sm:mb-8">
+                <span className="shrink-0 w-6 h-[2px]" style={{ backgroundColor: brandInfo.color }} />
+                <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider whitespace-nowrap" style={{ color: brandInfo.color }}>
+                  {brandInfo.name} Appliance Repair — Dubai
                 </span>
+              </div>
+
+              <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight mb-5 sm:mb-6">
+                {brandInfo.name} <span style={{ color: brandInfo.color }}>Service</span><br />Center
               </h1>
 
-              <p className="text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed">
-                {brandInfo.description}
+              <p className="text-white/60 text-base sm:text-lg leading-relaxed max-w-lg mb-8 sm:mb-10">
+                Professional {brandInfo.name} repair in Dubai — certified technicians, genuine parts, fast same-day service.
               </p>
 
-              <p className="text-base text-slate-600 max-w-xl leading-relaxed">
-                {brandInfo.content}
-              </p>
+              {/* Stats row */}
+              <div className="flex flex-wrap gap-8 mb-8 sm:mb-10 pb-8 sm:pb-10 border-b border-white/10">
+                {[["15+", "Years Experience"], ["5k+", "Repairs Done"], ["4.9★", "Customer Rating"]].map(([val, lbl]) => (
+                  <div key={lbl}>
+                    <p className="text-xl sm:text-2xl font-black text-white">{val}</p>
+                    <p className="text-xs text-white/40 uppercase tracking-wider mt-0.5">{lbl}</p>
+                  </div>
+                ))}
+              </div>
 
-              <div className="flex flex-col sm:flex-row gap-4">
+              {/* CTA buttons */}
+              <div className="flex flex-col gap-3 w-full">
                 <Link
                   href={`tel:${phoneNumber}`}
-                  className="px-8 py-4 hover:opacity-90 text-white font-bold rounded-xl transition-all hover:-translate-y-1 shadow-lg shadow-primary/25 text-center"
+                  className="w-full inline-flex items-center justify-center gap-2.5 text-white font-bold text-sm px-7 h-12 rounded-xl hover:opacity-90 transition-colors shadow-lg"
                   style={{ backgroundColor: brandInfo.color }}
                 >
+                  <Phone className="w-4 h-4" />
                   Call Now
                 </Link>
                 <Link
                   href={`https://wa.me/${phoneNumber}`}
                   target="_blank"
-                  className="px-8 py-4 bg-white hover:bg-slate-50 border border-slate-200 text-slate-900 font-bold rounded-xl transition-all hover:-translate-y-1 backdrop-blur-sm text-center shadow-sm"
+                  className="w-full inline-flex items-center justify-center gap-2.5 border border-white/30 text-white font-bold text-sm px-7 h-12 rounded-xl hover:bg-white/10 transition-colors"
                 >
-                  WhatsApp Us
+                  WhatsApp Us <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
+            </div>
 
-              {/* Stats Ticker */}
-              <div className="pt-8 border-t border-slate-200 grid grid-cols-3 gap-4 md:gap-8">
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: brandInfo.color }}>15+</div>
-                  <div className="text-xs md:text-sm text-slate-500">Years Exp.</div>
+            {/* RIGHT — service chips (desktop only) */}
+            <div className="hidden lg:flex flex-col gap-3">
+              {["Washing Machine Repair", "Refrigerator Repair", "Oven & Cooker Repair", "Dishwasher Repair", "Dryer Repair", "AC Repair"].map((svc, i) => (
+                <div key={svc} className="flex items-center justify-between px-5 py-4 bg-white/[0.05] border border-white/10 hover:bg-white/[0.10] hover:border-white/25 transition-all group cursor-default">
+                  <span className="text-white/80 text-sm font-medium group-hover:text-white transition-colors">{svc}</span>
+                  <span className="text-white/20 text-xs font-mono">0{i + 1}</span>
                 </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: brandInfo.color }}>5k+</div>
-                  <div className="text-xs md:text-sm text-slate-500">Repairs Done</div>
-                </div>
-                <div>
-                  <div className="text-2xl md:text-3xl font-bold mb-1" style={{ color: brandInfo.color }}>4.9</div>
-                  <div className="text-xs md:text-sm text-slate-500">Rating</div>
-                </div>
+              ))}
+              <div className="mt-2 px-5 py-4 border" style={{ backgroundColor: `color-mix(in srgb, ${brandInfo.color} 10%, transparent)`, borderColor: `color-mix(in srgb, ${brandInfo.color} 30%, transparent)` }}>
+                <p className="text-xs font-bold uppercase tracking-widest" style={{ color: brandInfo.color }}>{brandInfo.name} Specialist</p>
+                <p className="text-white/50 text-xs mt-0.5">Certified for all {brandInfo.name} models</p>
               </div>
             </div>
 
-            {/* Hero Visual */}
-            <div className="relative hidden lg:block">
-              <div className="relative z-10 bg-white/60 backdrop-blur-2xl rounded-3xl p-8 border border-white/20 shadow-2xl transform rotate-3 hover:rotate-0 transition-all duration-500">
-                <div className="aspect-[4/3] rounded-2xl overflow-hidden bg-slate-100 relative group">
-                  <Image
-                    src="/images/technician.png"
-                    alt="Professional Technician"
-                    fill
-                    className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-slate-900/10 to-transparent"></div>
-                </div>
-
-                {/* Floating Badge with Brand Color */}
-                <div className="absolute -bottom-6 -left-6 text-white p-4 rounded-2xl shadow-xl flex items-center gap-4 animate-bounce-slow" style={{ backgroundColor: brandInfo.color, boxShadow: `0 20px 25px -5px ${brandInfo.color}40, 0 10px 10px -5px ${brandInfo.color}20` }}>
-                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                    <CheckCircle2 className="w-6 h-6 text-white" strokeWidth={2.5} />
-                  </div>
-                  <div>
-                    <div className="font-bold">Guaranteed</div>
-                    <div className="text-xs opacity-90">Service Warranty</div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
+        </div>
+
+        {/* Wave divider */}
+        <div className="relative z-10 w-full">
+          <svg viewBox="0 0 1440 48" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full block">
+            <path d="M0 48L360 12L720 38L1080 8L1440 48V48H0V48Z" fill="rgb(248,250,252)" />
+          </svg>
         </div>
       </section>
 
@@ -212,7 +211,7 @@ const BrandPage = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
               {services.map((service, index) => (
                 <div key={index} className="group relative">
-                  <div className="bg-white/80 backdrop-blur-md rounded-3xl overflow-hidden border border-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-primary/5" style={{ borderColor: 'rgb(226 232 240)' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = brandInfo.color} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(226 232 240)'}>
+                  <div className="bg-white/80 backdrop-blur-md rounded-3xl overflow-hidden border border-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl" style={{ borderColor: 'rgb(226 232 240)' }} onMouseEnter={(e) => e.currentTarget.style.borderColor = brandInfo.color} onMouseLeave={(e) => e.currentTarget.style.borderColor = 'rgb(226 232 240)'}>
                     <div className="relative aspect-video overflow-hidden">
                       <Image
                         src={service.imageUrl}
@@ -290,7 +289,7 @@ const BrandPage = () => {
                 <Link
                   href={`https://wa.me/${phoneNumber}`}
                   target="_blank"
-                  className="px-8 py-4 text-white font-bold rounded-xl hover:opacity-90 hover:scale-105 transition-transform duration-300 shadow-lg shadow-primary/20"
+                  className="px-8 py-4 text-white font-bold rounded-xl hover:opacity-90 hover:scale-105 transition-transform duration-300 shadow-lg"
                   style={{ backgroundColor: brandInfo.color }}
                 >
                   WhatsApp Now

@@ -29,6 +29,17 @@ export const brandConfig = {
     description: "Siemens Service Center: Fast, reliable repairs for a hassle-free home.",
     content: "Our skilled technicians are committed to restoring your Siemens appliances to peak performance, ensuring your comfort and convenience. From fixing minor glitches to tackling major breakdowns, we've got you covered. Experience top-notch service that keeps your household running smoothly!",
   },
+  samsung: {
+    name: "Samsung",
+    logo: "/samsung.svg",
+    logoWhite: "/samsung-white.svg",
+    color: "#1428A0",
+    borderColor: "border-[#1428A0]",
+    textColor: "text-[#1428A0]",
+    bgColor: "bg-[#1428A0]",
+    description: "Samsung Service Center: Fast, reliable repairs for a hassle-free home.",
+    content: "Our skilled technicians are committed to restoring your Samsung appliances to peak performance, ensuring your comfort and convenience. From fixing minor glitches to tackling major breakdowns, we've got you covered. Experience top-notch service that keeps your household running smoothly!",
+  },
 };
 
 export const getBrandConfig = (brand) => {

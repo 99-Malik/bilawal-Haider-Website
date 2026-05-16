@@ -42,7 +42,7 @@ const Footer = () => {
               {brandInfo ? (
                 <div className="relative flex items-center justify-center h-12 w-auto">
                   <Image
-                    src={brandInfo.logo}
+                    src={brandInfo.logoWhite || brandInfo.logo}
                     alt={`${brandInfo.name} Logo`}
                     width={120}
                     height={50}
